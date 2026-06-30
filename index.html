@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
+    <!-- ENCABEZADO -->
     <header>
-        <header class="hero">
-
-        <nav class="nav container" id="nav">
-            <a href="#hero" class="nav__logo">
-                Lorenzo <span>Bregant</span>
+        <div>
+            <a href="#">
+                <h1>Lorenzo Bregant</h1>
+                <p>Técnico Superior en Desarrollo de Software</p>
             </a>
-
-            <ul class="nav__links">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Sobre mí</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Proyectos</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Contacto</a>
-                </li>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Perfil</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
-
-            <a href="#nav" class="nav__hamburguer">
-                <img src="./assets/menu.svg" class="nav__icon">
-            </a>
-
-            <a href="#" class="nav__close">
-                <img src="./assets/close.svg" class="nav__icon">
-            </a>
         </nav>
     </header>
-
+    
     <main>
+        <!-- PERFIL -->
+        <div class="sobre-mi">
+            <div class="resumen">
+                <div class="estado"><span>Disponible para trabajar</span></div>
+                <div>
+                    <h1>Hola soy <span>Lorenzo</span></h1>Estudiante de la carrera Técnico Superior en Desarrollo de
+                    Software, en busca de mi primera experiencia profesional. Con muchas ganas de aprender y crecer en
+                    el mundo del desarrollo de software.
+                </div>
+                <div class="links-inicio">
+                    <a class="link-trabajo" href="#">Vé mi trabajo ></a>
+                    <a class="link-contacto" href="#">Contactame</a>
+                </div>
+            </div>
+            <div class="foto"><img src="./assets/foto.jpeg" alt=""></div>
+        </div>
     </main>
 </body>
+
 </html>
