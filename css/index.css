@@ -2,7 +2,7 @@
     --color-primario: #2D6A4F;
     --color-secundario: #000;
     --color-acento: #B7E4C7;
-    --color-texto: #000;
+    --color-texto: #ffffff;
     --fuente-titulo: 'verdana', sans-serif;
     --fuente-cuerpo: 'verdana', sans-serif;
     --radio-borde: 8px;
@@ -104,11 +104,11 @@ nav ul li a:hover {
     box-sizing: border-box;
     padding-top: 100px;
     padding-left: 100px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .sobre-mi .estado {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .foto {
@@ -120,10 +120,13 @@ nav ul li a:hover {
 }
 
 .foto img {
-    height: 500px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: var(--radio-borde);
+    display: block;
+    margin-bottom: 1.2rem;
     opacity: 0.7;
-    border-radius: 20px;
 }
 
 .links-inicio {
@@ -135,24 +138,30 @@ nav ul li a:hover {
 
 .links-inicio .link-trabajo {
     display: inline-block;
-    background-color: #ffffffd8;
-    color: #000;
+    text-decoration: none;
+    color: var(--color-texto);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 15px 20px;
     border: 1px solid #000;
     border-radius: 30em;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .links-inicio .link-trabajo:hover {
-    background-color: #ffffff86;
+    background-color: rgba(255, 136, 0, 0.5);
 }
 
 .links-inicio .link-contacto {
     display: inline-block;
+    text-decoration: none;
+    color: var(--color-texto);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 15px 20px;
     border: 1px solid #000;
     border-radius: 30em;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .links-inicio .link-contacto:hover {
-    background-color: #ffffff18;
+    background-color: rgba(255, 136, 0, 0.5);
 }
